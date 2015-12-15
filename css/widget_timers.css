@@ -1,0 +1,11 @@
+.badge.success {
+	background-color: #43A047;
+}
+
+.badge.error {
+	background-color: #F44336;
+}
+
+.badge.running {
+	background-color: #039BE5;
+}

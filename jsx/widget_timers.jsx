@@ -1,5 +1,6 @@
 define(function (require) {
 
+	var Widget = require('js/components/widget');
 	var TimersService = require('js/services/timers');
 
 	var WidgetTimers = React.createClass({
@@ -16,9 +17,9 @@ define(function (require) {
 		},
 
 		mount: function (timer, i) {
-			return <li key={i}>
-				<label>{ timer.name }</label>
-				<div className={ 'icon timer-' + timer.status.toLowerCase() }/>
+			return <li className='list-group-item' key={i}>
+				<span className={ 'badge ' + timer.status.toLowerCase() }>{ timer.repeatStatus }</span>
+				{ timer.name }
 			</li>;
 		},
 
@@ -26,16 +27,15 @@ define(function (require) {
 			if(!this.state.timers)
 				return <div>Loading!</div>;
 
-			return <div>
-				<h1>Timers</h1>
-				<ul>
+			return <Widget name='Timers'>
+				<ul className='list-group'>
 					{
 						this.state.timers.map(function (timer, i) {
 							return this.mount(timer, i);
 						}.bind(this))
 					}
 				</ul>
-			</div>;
+			</Widget>;
 		}
 	});
 
