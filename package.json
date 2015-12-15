@@ -1,41 +1,41 @@
 {
-  "name": "ozi-7",
-  "version": "1.0.0",
-  "description": "",
-  "main": "js/app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bieelsoares/ozi-7.git"
-  },
-  "author": "Gabriel Ferreira Soares",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bieelsoares/ozi-7/issues"
-  },
-  "homepage": "https://github.com/bieelsoares/ozi-7#readme",
-  "dependencies": {
-    "bootstrap": "^3.3.6",
-    "fbemitter": "^2.0.0",
-    "flux": "^2.1.1",
-    "jquery": "^2.1.4",
-    "react": "^0.13.3",
-    "react-router": "^0.13.3",
-    "react-tools": "^0.13.3",
-    "requirejs": "^2.1.20",
-    "underscore": "^1.8.3"
-  },
-  "devDependencies": {
-    "browserify": "^12.0.1",
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-preprocess": "^2.0.0",
-    "gulp-rename": "^1.2.2",
-    "vinyl-source-stream": "^1.1.0"
-  },
-  "engines": {
-    "node": "^4.1.0",
-    "npm": "^3.3.0"
-  }
+	"name": "osi-7",
+	"version": "1.0.0",
+	"description": "",
+	"main": "js/app.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bieelsoares/osi-7.git"
+	},
+	"author": "Gabriel Ferreira Soares",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/bieelsoares/osi-7/issues"
+	},
+	"homepage": "https://github.com/bieelsoares/osi-7#readme",
+	"dependencies": {
+		"bootstrap": "^3.3.6",
+		"fbemitter": "^2.0.0",
+		"flux": "^2.1.1",
+		"jquery": "^2.1.4",
+		"react": "^0.13.3",
+		"react-router": "^0.13.3",
+		"react-tools": "^0.13.3",
+		"requirejs": "^2.1.20",
+		"underscore": "^1.8.3"
+	},
+	"devDependencies": {
+		"browserify": "^12.0.1",
+		"del": "^2.0.2",
+		"gulp": "^3.9.0",
+		"gulp-babel": "^5.2.1",
+		"gulp-concat": "^2.6.0",
+		"gulp-preprocess": "^2.0.0",
+		"gulp-rename": "^1.2.2",
+		"vinyl-source-stream": "^1.1.0"
+	},
+	"engines": {
+		"node": "^4.1.0",
+		"npm": "^3.3.0"
+	}
 }
