@@ -1,4 +1,5 @@
 # osi-7
+A panel which monitors all the functions of the application layer.
 
 ###Requires:
 
@@ -24,3 +25,11 @@
   * `cd osi-7`
   * `npm install`
   * `gulp test`
+
+## Base libs:
+ * bootstrap
+	* flux
+	* jquery
+	* react
+	* requirejs
+	* underscore
