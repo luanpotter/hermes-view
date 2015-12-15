@@ -15,8 +15,11 @@ define(function (require) {
 			}.bind(this));
 		},
 
-		mount: function (timer) {
-			return <label>{ timer.name }</label>;
+		mount: function (timer, i) {
+			return <li key={i}>
+				<label>{ timer.name }</label>
+				<div className={ 'icon timer-' + timer.status.toLowerCase() }/>
+			</li>;
 		},
 
 		render: function () {
@@ -26,7 +29,7 @@ define(function (require) {
 			return <ul>
 				{
 					this.state.timers.map(function (timer, i) {
-						return <li key={i}>{ this.mount(timer) }</li>;
+						return this.mount(timer, i);
 					}.bind(this))
 				}
 			</ul>;
