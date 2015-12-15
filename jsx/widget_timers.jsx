@@ -26,13 +26,16 @@ define(function (require) {
 			if(!this.state.timers)
 				return <div>Loading!</div>;
 
-			return <ul>
-				{
-					this.state.timers.map(function (timer, i) {
-						return this.mount(timer, i);
-					}.bind(this))
-				}
-			</ul>;
+			return <div>
+				<h1>Timers</h1>
+				<ul>
+					{
+						this.state.timers.map(function (timer, i) {
+							return this.mount(timer, i);
+						}.bind(this))
+					}
+				</ul>
+			</div>;
 		}
 	});
 
