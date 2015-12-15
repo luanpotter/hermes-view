@@ -5,7 +5,7 @@ define(function (require) {
 
 	var WidgetTimers = React.createClass({
 		getInitialState: function () {
-			return {timers: null}
+			return { timers: null };
 		},
 
 		componentWillMount: function () {

@@ -1,3 +1,8 @@
+.widget-timers {
+	max-width: 35em;
+    margin: 1em 4em;
+}
+
 .badge.success {
 	background-color: #43A047;
 }
