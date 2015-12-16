@@ -10,10 +10,22 @@ define(function (require) {
 
 		componentWillMount: function () {
 			new TimersService().buscar().done(function(data){
-				this.setState({
-					timers: data
-				});
+				this.setTimersSorting(data);
 			}.bind(this));
+		},
+
+		setTimersSorting: function (timers) {
+			var timersSorted = timers.filter(function (timer) {
+				return timer.status == 'ERROR'; 
+			}).concat(timers.filter(function (timer) {
+				return timer.status == 'RUNNING';
+			}).concat(timers.filter(function (timer) {
+				return timer.status == 'SUCCESS';
+			})));
+
+			this.setState({
+				timers: timersSorted
+			});
 		},
 
 		mount: function (timer, i) {
