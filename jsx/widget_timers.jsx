@@ -1,6 +1,7 @@
 define(function (require) {
 
 	var Widget = require('js/components/widget');
+	var Tooltip = require('js/components/tooltip');
 	var TimersService = require('js/services/timers');
 
 	var WidgetTimers = React.createClass({
@@ -31,7 +32,7 @@ define(function (require) {
 		mount: function (timer, i) {
 			return <li className='list-group-item' key={i}>
 				<span className={ 'badge ' + timer.status.toLowerCase() }>{ timer.repeatStatus }</span>
-				{ timer.name }
+				<Tooltip text={ timer.url }>{ timer.name }</Tooltip>
 			</li>;
 		},
 

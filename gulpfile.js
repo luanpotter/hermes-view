@@ -51,6 +51,10 @@ var deps = {
 		return gulp.src('node_modules/bootstrap/dist/fonts/*')
 			.pipe(gulp.dest('build/libs/bootstrap/fonts'));	
 	},
+	'hint-css': function () {
+		return gulp.src('node_modules/hint.css/hint.css')
+			.pipe(gulp.dest('build/libs/hint/css'));	
+	},
 	'fbemitter': function () {
 		var b = browserify({
 			entries: 'node_modules/fbemitter/index.js',
