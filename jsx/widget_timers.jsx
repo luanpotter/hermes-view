@@ -2,7 +2,7 @@ define(function (require) {
 
 	var Widget = require('js/components/widget');
 	var Tooltip = require('js/components/tooltip');
-	var TimersService = require('js/services/timers');
+	var BaseService = require('js/services/base');
 
 	var WidgetTimers = React.createClass({
 		getInitialState: function () {
@@ -10,7 +10,7 @@ define(function (require) {
 		},
 
 		componentWillMount: function () {
-			new TimersService().buscar().done(function(data){
+			new BaseService().buscarTodos('/timers').done(function(data){
 				this.setTimersSorting(data);
 			}.bind(this));
 		},
