@@ -8,7 +8,7 @@
 }
 
 .widget-timers .show-more {
-    margin: 1em 0 0 11em;
+	display: inline-block;
 }
 
 .badge.success {

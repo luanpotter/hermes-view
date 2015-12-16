@@ -1,0 +1,15 @@
+.container-logo {
+	width: 6em;
+	margin-top: -0.5em;
+	margin-left: -1em;
+}
+
+.logo {
+	width: 2em;
+}
+
+.logo-title {
+	margin-left: 0.5em;
+    vertical-align: middle;
+    font-family: 'Acme', sans-serif;
+}

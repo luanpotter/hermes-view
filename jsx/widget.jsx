@@ -11,7 +11,9 @@ define(function (require) {
   				</div>
   				<div className='panel-body'>
     				{ this.props.children }
-    				<button className='btn btn-default show-more'>Show more ...</button>
+    				<div className='container-show-more'>
+    					<button className='btn btn-default show-more'>Show more ...</button>
+    				</div>
   				</div>
 			</div>;
 		}

@@ -17,8 +17,12 @@ gulp.task('transform-css', ['clean'], function () {
 	return gulp.src(['./css/**/*.*']).pipe(gulp.dest('build/css'));
 });
 
+gulp.task('transform-images', ['clean'], function () {
+	return gulp.src(['./images/**/*.*']).pipe(gulp.dest('build/images'));
+});
+
 gulp.task('transform-index', ['clean'], function () {
-	return gulp.src(['index.html']).pipe(gulp.dest('build'));
+	return gulp.src(['index.html', 'favicon.ico']).pipe(gulp.dest('build'));
 });
 
 //---------------babel builder

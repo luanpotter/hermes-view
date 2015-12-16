@@ -6,10 +6,14 @@ define(function (require) {
 	var Route = Router.Route;
 
 	var Home = require('js/components/home');
+	var Navbar = require('js/components/navbar');
 
 	var App = React.createClass({
 		render: function () {
-			return <RouteHandler/>;
+			return <div>
+				<Navbar/>
+				<RouteHandler/>
+			</div>;
 		}
 	});
 
