@@ -1,3 +1,11 @@
 .widget-servers {
     width: 165%;
 }
+
+.list-servers {
+    padding: 0 1em 1em 1em;
+}
+
+.server {
+	text-align: center;
+}

@@ -18,8 +18,10 @@ define(function (require) {
 		},
 
 		mount: function (server, i) {
-			return <div className='thumbnail list-group-item' key={i}>
-				<Tooltip text={ server.ip }>{ server.label }</Tooltip>
+			return <div className='col-sm-6 col-md-3 list-servers' key={_.uniqueId('server_')}>
+				<div className='thumbnail list-group-item server' key={i}>
+					<Tooltip text={ server.ip }>{ server.label }</Tooltip>
+				</div>
 			</div>;
 		},
 
@@ -27,8 +29,8 @@ define(function (require) {
 			if(!this.state.servers)
 				return <div>Loading!</div>;
 
-			return <Widget name='Servers'>
-				<div className='list-servers'>
+			return <Widget name='Servers' disableLazyButton={true}>
+				<div className='row'>
 					{
 						this.state.servers.map(function (server, i) {
 							return this.mount(server, i);

@@ -4,6 +4,14 @@ define(function (require) {
 		classPanel: function () {
 			return 'widget widget-' + this.props.name.toLowerCase();
 		},
+		lazyButton: function () {
+			if (this.props.disableLazyButton) {
+				return <div/>;
+			}
+			return <div className='container-show-more'>
+    			<button className='btn btn-default show-more'>Show more ...</button>
+    		</div>;
+		},
 		render: function () {
 			return <div className={ 'panel panel-default ' + this.classPanel() }>
   				<div className='panel-heading'>
@@ -11,9 +19,7 @@ define(function (require) {
   				</div>
   				<div className='panel-body'>
     				{ this.props.children }
-    				<div className='container-show-more'>
-    					<button className='btn btn-default show-more'>Show more ...</button>
-    				</div>
+    				{ this.lazyButton() }
   				</div>
 			</div>;
 		}
