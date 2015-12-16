@@ -2,7 +2,7 @@ define(function (require) {
 
 	var Widget = React.createClass({
 		classPanel: function () {
-			return 'widget-' + this.props.name.toLowerCase();
+			return 'widget widget-' + this.props.name.toLowerCase();
 		},
 		render: function () {
 			return <div className={ 'panel panel-default ' + this.classPanel() }>

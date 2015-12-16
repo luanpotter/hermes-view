@@ -6,7 +6,7 @@ define(function (require) {
 	var Home = React.createClass({
 
 		render: function () {
-			return <div>
+			return <div className='home'>
 				<WidgetTimers />
 				<WidgetServers />
 			</div>;
