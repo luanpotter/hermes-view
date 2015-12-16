@@ -1,7 +1,7 @@
 .container-logo {
-	width: 6em;
-	margin-top: -0.5em;
-	margin-left: -1em;
+    position: absolute;
+    left: 1em;
+    top: 0.4em;
 }
 
 .logo {
