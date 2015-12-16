@@ -3,6 +3,10 @@
     margin: 1em 4em;
 }
 
+.list-timers {
+	margin: 0 auto;
+}
+
 .badge.success {
 	background-color: #43A047;
 }
