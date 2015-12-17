@@ -40,7 +40,7 @@ define(function (require) {
 			if(!this.state.timers)
 				return <div>Loading!</div>;
 
-			return <Widget name='Timers'>
+			return <Widget name='Timers' gridSize='4'>
 				<ul className='list-group list-timers'>
 					{
 						this.state.timers.map(function (timer, i) {

@@ -13,14 +13,16 @@ define(function (require) {
     		</div>;
 		},
 		render: function () {
-			return <div className={ 'panel panel-default ' + this.classPanel() }>
-  				<div className='panel-heading'>
-  					<h3 className='panel-title'>{ this.props.name || 'Widget' }</h3>
-  				</div>
-  				<div className='panel-body'>
-    				{ this.props.children }
-    				{ this.lazyButton() }
-  				</div>
+			return <div className={'col-sm-' + this.props.gridSize}>
+				<div className={ 'panel panel-default ' + this.classPanel() }>
+  					<div className='panel-heading'>
+  						<h3 className='panel-title'>{ this.props.name || 'Widget' }</h3>
+  					</div>
+  					<div className='panel-body'>
+    					{ this.props.children }
+    					{ this.lazyButton() }
+  					</div>
+				</div>
 			</div>;
 		}
 	});

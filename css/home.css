@@ -2,3 +2,7 @@
     display: inline-flex;
     width: 100%;
 }
+
+.container-home {
+	margin: 0 0 0 2em;
+}

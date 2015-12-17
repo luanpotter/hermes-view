@@ -6,9 +6,11 @@ define(function (require) {
 	var Home = React.createClass({
 
 		render: function () {
-			return <div className='home'>
-				<WidgetTimers />
-				<WidgetServers />
+			return <div className='container-home'>
+				<div className='row home'>
+					<WidgetTimers />
+					<WidgetServers />
+				</div>
 			</div>;
 		}
 	});
