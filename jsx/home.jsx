@@ -6,8 +6,8 @@ define(function (require) {
 	var Home = React.createClass({
 
 		render: function () {
-			return <div className='container-home'>
-				<div className='row home'>
+			return <div className='container'>
+				<div className='row'>
 					<WidgetTimers />
 					<WidgetServers />
 				</div>

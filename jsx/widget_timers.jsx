@@ -41,7 +41,7 @@ define(function (require) {
 				return <div>Loading!</div>;
 
 			return <Widget name='Timers' gridSize='4'>
-				<ul className='list-group list-timers'>
+				<ul className='list-group'>
 					{
 						this.state.timers.map(function (timer, i) {
 							return this.mount(timer, i);
