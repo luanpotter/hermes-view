@@ -1,7 +1,7 @@
 define(function (require) {
 
 	var Widget = require('js/components/widget');
-	var Tooltip = require('js/components/tooltip');
+	var Server = require('js/components/server');
 	var BaseService = require('js/services/base');
 
 	var WidgetServers = React.createClass({
@@ -17,12 +17,8 @@ define(function (require) {
 			}.bind(this));
 		},
 
-		mount: function (server, i) {
-			return <div className='col-sm-3 list-servers' key={_.uniqueId('server_')}>
-				<div className='thumbnail list-group-item server' key={i}>
-					<Tooltip text={ server.ip }>{ server.label }</Tooltip>
-				</div>
-			</div>;
+		mount: function (server) {
+			return <Server value={server} key={_.uniqueId('server_')}/>;
 		},
 
 		render: function () {
@@ -32,8 +28,8 @@ define(function (require) {
 			return <Widget name='Servers' disableLazyButton={true} gridSize='8'>
 				<div className='row'>
 					{
-						this.state.servers.map(function (server, i) {
-							return this.mount(server, i);
+						this.state.servers.map(function (server) {
+							return this.mount(server);
 						}.bind(this))
 					}
 				</div>
