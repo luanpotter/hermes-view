@@ -2,6 +2,13 @@
 	display: inline-block;
 }
 
+.timer-name {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    width: 17em;
+    white-space: nowrap;
+}
+
 .badge.success {
 	background-color: #43A047;
 }

@@ -30,9 +30,11 @@ define(function (require) {
 		},
 
 		mount: function (timer, i) {
+			var repeatStatus = timer.repeatStatus > 99 ? '+99' : timer.repeatStatus;
+
 			return <li className='list-group-item' key={i}>
-				<span className={ 'badge ' + timer.status.toLowerCase() }>{ timer.repeatStatus }</span>
-				<Tooltip text={ timer.url }>{ timer.name }</Tooltip>
+				<span className={ 'badge ' + timer.status.toLowerCase() }>{ repeatStatus }</span>
+				<Tooltip text={ timer.url }><div className='timer-name'>{ timer.name }</div></Tooltip>
 			</li>;
 		},
 

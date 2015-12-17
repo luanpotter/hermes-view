@@ -3,13 +3,13 @@ define(function (require) {
 	return fixtures('timers', [{
 		name: 'Importador Débito Cielo',
 		status: 'SUCCESS',
-		repeatStatus: 89,
+		repeatStatus: 189,
 		url: 'http://socc.confidencecambio.com/timers/importador_cielo'
 	},
 	{
-		name: 'Prorrogador de Ordem de Pagamento',
+		name: 'Prorrogador de Ordem de Pagamento Cancelada ou Erro Bacen',
 		status: 'ERROR',
-		repeatStatus: 2,
+		repeatStatus: 52,
 		url: 'http://socc.confidencecambio.com/timers/prorrogador_op'
 	},
 	{
