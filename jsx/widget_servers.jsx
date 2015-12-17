@@ -6,7 +6,7 @@ define(function (require) {
 
 	var WidgetServers = React.createClass({
 		getInitialState: function () {
-			return { servers: null };
+			return { servers: null, actualVersion: 'b70e2a0d855b4dc7b1ea34a8a9d10305'};
 		},
 
 		componentWillMount: function () {
@@ -18,7 +18,7 @@ define(function (require) {
 		},
 
 		mount: function (server) {
-			return <Server value={server} key={_.uniqueId('server_')}/>;
+			return <Server value={server} key={_.uniqueId('server_')} actualVersion={this.state.actualVersion}/>;
 		},
 
 		render: function () {
