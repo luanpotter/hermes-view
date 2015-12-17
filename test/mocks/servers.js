@@ -3,22 +3,22 @@ define(function (require) {
 	return fixtures('servers', [{
 		label: 'APACHE',
 		ip: '10.0.0.60',
-		status: 'OK'
+		status: 'SUCCESS'
 	},{
 		label: 'CORRETORA 71',
 		ip: '10.90.0.71',
-		status: 'NOT_FOUND'
+		status: 'ERROR'
 	},{
 		label: 'CORRETORA 79',
 		ip: '10.90.0.79',
-		status: 'APP_SERVER_DOWN'
+		status: 'ERROR'
 	},{
 		label: 'BANCO 66',
 		ip: '10.90.0.66',
-		status: 'EAR_NOT_FOUND'
+		status: 'ERROR'
 	},{
 		label: 'BANCO 80',
 		ip: '10.90.0.80',
-		status: 'OK'
+		status: 'SUCCESS'
 	}]);
 });
