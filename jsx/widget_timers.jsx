@@ -34,7 +34,7 @@ define(function (require) {
 
 			return <li className='list-group-item' key={i}>
 				<span className={ 'badge ' + timer.status.toLowerCase() }>{ repeatStatus }</span>
-				<Tooltip text={ timer.url }><div className='timer-name'>{ timer.name }</div></Tooltip>
+				<Tooltip text={ timer.url } customClass='hint-timer'><div className='timer-name'>{ timer.name }</div></Tooltip>
 			</li>;
 		},
 
