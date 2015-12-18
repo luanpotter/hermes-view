@@ -1,3 +1,4 @@
-.notification-title {
-	padding-left: 0.5em; 
+.notification-title.unread {
+	padding-left: 0.5em;
+	font-weight: bold;
 }

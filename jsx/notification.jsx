@@ -9,9 +9,12 @@ define(function (require) {
 			return { notifications: null };
 		},
 		componentWillMount: function () {
-			this.loadNotifications();
+			setInterval(function () {
+				this.loadNotifications();
+			}.bind(this), 5000)
 		},
 		loadNotifications: function () {
+			console.log('Loading notifications...');
 			new BaseService().buscarTodos('/notifications').done(function(data){
 				this.setState({
 					notifications: data
@@ -28,14 +31,17 @@ define(function (require) {
 			} else {
 				this.state.notifications.forEach(function (notification) {
 					var read = notification.read ? <span /> : <span className='label label-danger'>NEW!</span>;
+					var className = notification.read ? 'read' : 'unread';
+
 					result.push(<li>
 							<Link to={ '/notifications/' + notification.id }>
 								{ read }	
-								<span className='notification-title'>{ notification.title }</span>
+								<span className={ 'notification-title ' + className }>{ notification.title }</span>
 							</Link>
 						</li> );
 				}.bind(this));
-				result.push(<li role='separator' className='divider'></li> );
+				result.push(<li role='separator' className='divider'></li>);
+				result.push(<li><Link to='/notifications'>Mostrar todas</Link></li> );
 				result.push(<li onClick={this.clearNotifications}><a href='#'>Marcar todas como lida</a></li> );
 			}
 			return result;
