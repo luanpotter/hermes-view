@@ -6,6 +6,7 @@ define(function (require) {
 
 	var WidgetServers = React.createClass({
 		getInitialState: function () {
+			//TODO actual version dynamic
 			return { servers: null, actualVersion: 'b70e2a0d855b4dc7b1ea34a8a9d10305'};
 		},
 
