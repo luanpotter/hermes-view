@@ -2,6 +2,7 @@ define(function (require) {
 
 	var WidgetTimers = require('js/components/widget_timers');
 	var WidgetServers = require('js/components/widget_servers');
+	var WidgetServices = require('js/components/widget_services');
 
 	var Home = React.createClass({
 
@@ -10,6 +11,7 @@ define(function (require) {
 				<div className='row'>
 					<WidgetTimers />
 					<WidgetServers />
+					<WidgetServices />
 				</div>
 			</div>;
 		}

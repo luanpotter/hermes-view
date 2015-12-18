@@ -3,6 +3,7 @@ define(function (require) {
 	var mocks = {};
 	_.defaults(mocks, require('mocks/timers'));
 	_.defaults(mocks, require('mocks/servers'));
+	_.defaults(mocks, require('mocks/services'));
 
 	var verbs = ['get', 'post', 'put', 'delete'];
 
