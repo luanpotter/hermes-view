@@ -25,7 +25,7 @@ define(function (require) {
 		},
 
 		mount: function (service) {
-			return <div className='col-sm-6 col-xs-12 list-services'>
+			return <div className='col-sm-6 col-xs-12 list-services' key={_.uniqueId('services_')}>
 				<div className='thumbnail list-group-item'>
 					<span className={ 'label label-' + this.getType(service) }>{ service.status }</span>
 					<Tooltip text={ service.server }>
