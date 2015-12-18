@@ -43,7 +43,8 @@ var deps = {
 	'q': 'q/q.js',
 	'underscore': 'underscore/underscore-min.js',
 	'jquery': 'jquery/dist/jquery.js',
-	'bootstrap': function () {
+	'bootstrap': 'bootstrap/dist/js/bootstrap.js',
+	'bootstrap-css': function () {
 		return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css', 'node_modules/bootstrap/dist/css/bootstrap-theme.css'])
 			.pipe(gulp.dest('build/libs/bootstrap/css'));	
 	},

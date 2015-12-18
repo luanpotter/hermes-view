@@ -13,3 +13,12 @@
     vertical-align: middle;
     font-family: 'Acme', sans-serif;
 }
+
+.navbar-icon {
+    font-size: 23px;
+    color: #FAFAFA;
+}
+
+.container-navbar-icon.container-navbar-icon {
+	padding: 0;
+}

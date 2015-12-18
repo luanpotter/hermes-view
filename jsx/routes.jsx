@@ -8,6 +8,8 @@ define(function (require) {
 	var Home = require('js/components/home');
 	var Navbar = require('js/components/navbar');
 
+	require('bootstrap');
+
 	var App = React.createClass({
 		render: function () {
 			return <div>
