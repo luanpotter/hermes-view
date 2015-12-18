@@ -1,20 +1,13 @@
 define(function (require) {
 
+  var NavbarHeader = require('js/components/navbar-header');
   var Notification = require('js/components/notification');
 
 	var Navbar = React.createClass({
 		render: function () {
 			return <nav className='navbar navbar-inverse navbar-static-top'>
   				<div className='container'>
-  					<div className='navbar-header'>
-      					<a className='navbar-brand' href='#'>
-      						<div className='container-logo'>
-        						<img className='logo' alt='OSI-7' src='../images/logo.png'/>
-        						<span className='logo-title'>OSI-7</span>
-        					</div>
-      					</a>
-    				</div>
-
+  					<NavbarHeader min-width={768} />
             <ul className='nav navbar-nav navbar-right'>
               <Notification />
             </ul>

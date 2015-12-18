@@ -22,3 +22,7 @@
 .container-navbar-icon.container-navbar-icon {
 	padding: 0;
 }
+
+.wrapper-navbar-header {
+    display: inline-block;
+}

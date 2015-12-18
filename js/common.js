@@ -14,7 +14,7 @@ requirejs.config({
 	}
 });
 
-define(['react', 'underscore', 'jquery'], function (React, _, $) {
+define(['js/react-responsive', 'underscore', 'jquery'], function (React, _, $) {
 	var common = {};
 
 	common.React = React;
