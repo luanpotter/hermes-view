@@ -27,9 +27,9 @@ A panel which monitors all the functions of the application layer.
   * `gulp test`
 
 ## Base libs:
- * bootstrap
-	* flux
-	* jquery
-	* react
-	* requirejs
-	* underscore
+* bootstrap
+* flux
+* jquery
+* react
+* requirejs
+* underscore
