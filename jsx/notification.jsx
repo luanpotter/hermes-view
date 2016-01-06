@@ -47,9 +47,11 @@ define(function (require) {
 			return result;
 		},
 		render: function () {
-			return <li className='dropdown'> 
+			return <li className='dropdown dropdown-icon'> 
 				<a href='#' className='dropdown-toggle container-navbar-icon' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>
-					<span className='glyphicon glyphicon-bell btn-lg navbar-icon' aria-hidden='true'/>
+					<span className='glyphicon glyphicon-bell btn-lg navbar-icon' aria-hidden='true'>
+						<div className='notification-count'>{this.state.notifications.length}</div>
+					</span>
 				</a> 
 				<ul className='dropdown-menu'>
 					{ this.mount() } 

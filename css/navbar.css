@@ -24,3 +24,13 @@
 .wrapper-navbar-header {
     display: inline-block;
 }
+
+.nav.navbar-brand.icons-navbar {
+    display: inline-block;
+    padding: 0em;
+}
+
+.dropdown.dropdown-icon {
+    display: inline-block;
+    padding-left: 0.5em;
+}

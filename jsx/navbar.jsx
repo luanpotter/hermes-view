@@ -8,7 +8,8 @@ define(function (require) {
 			return <nav className='navbar navbar-inverse navbar-static-top'>
   				<div className='container'>
   					<NavbarHeader min-width={768} />
-            <ul className='nav navbar-nav navbar-right'>
+            <ul className='nav navbar-brand pull-right icons-navbar'>
+              <Notification />
               <Notification />
             </ul>
 				</div>
