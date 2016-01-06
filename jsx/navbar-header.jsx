@@ -4,7 +4,7 @@ define(function () {
 
 		render: function () {
 			return <div className='navbar-header wrapper-navbar-header'>
-      					<a className='navbar-brand' href='#'>
+      					<a className='navbar-brand title-navbar' href='#'>
       						<div className='container-logo'>
         						<img className='logo' alt='OSI-7' src='../images/logo.png'/>
         						<span className='logo-title'>OSI-7</span>
