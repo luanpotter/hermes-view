@@ -10,7 +10,6 @@ define(function (require) {
   					<NavbarHeader min-width={768} />
             <ul className='nav navbar-brand pull-right icons-navbar'>
               <Notification />
-              <Notification />
             </ul>
 				</div>
 			</nav>;
