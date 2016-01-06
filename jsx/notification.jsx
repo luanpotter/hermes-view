@@ -55,7 +55,7 @@ define(function (require) {
 				</a> 
 				<ul className='dropdown-menu'>
 					{ this.mount() } 
-				</ul> 
+				</ul>
 			</li>;
 		}
 	});

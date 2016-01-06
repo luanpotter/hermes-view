@@ -17,6 +17,10 @@
     color: #FAFAFA;
 }
 
+.navbar-icon:hover {
+    color: #000000;
+}
+
 .container-navbar-icon.container-navbar-icon {
 	padding: 0;
 }
