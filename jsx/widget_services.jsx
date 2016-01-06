@@ -10,6 +10,13 @@ define(function (require) {
 		},
 
 		componentWillMount: function () {
+			this.load();
+			setInterval(function () {
+				this.load();
+			}.bind(this), 5000);
+		},
+
+		load: function () {
 			new BaseService().buscarTodos('/services', {
 				run_id: 'last'
 			}).done(function(data){

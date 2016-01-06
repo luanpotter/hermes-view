@@ -9,12 +9,12 @@ define(function (require) {
 			return { notifications: null };
 		},
 		componentWillMount: function () {
+			this.load();
 			setInterval(function () {
-				this.loadNotifications();
-			}.bind(this), 5000)
+				this.load();
+			}.bind(this), 5000);
 		},
-		loadNotifications: function () {
-			console.log('Loading notifications...');
+		load: function () {
 			new BaseService().buscarTodos('/notifications').done(function(data){
 				this.setState({
 					notifications: data
