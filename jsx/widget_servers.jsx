@@ -11,7 +11,9 @@ define(function (require) {
 		},
 
 		componentWillMount: function () {
-			new BaseService().buscarTodos('/servers').done(function(data){
+			new BaseService().buscarTodos('/servers', {
+				run_id: 'last'
+			}).done(function(data){
 				this.setState({
 					servers: data
 				});

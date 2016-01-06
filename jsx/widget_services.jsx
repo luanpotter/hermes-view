@@ -10,7 +10,9 @@ define(function (require) {
 		},
 
 		componentWillMount: function () {
-			new BaseService().buscarTodos('/services').done(function(data){
+			new BaseService().buscarTodos('/services', {
+				run_id: 'last'
+			}).done(function(data){
 				this.setState({
 					services: data
 				});

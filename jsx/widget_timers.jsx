@@ -10,7 +10,9 @@ define(function (require) {
 		},
 
 		componentWillMount: function () {
-			new BaseService().buscarTodos('/timers').done(function(data){
+			new BaseService().buscarTodos('/timers', {
+				run_id: 'last'
+			}).done(function(data){
 				this.setTimersSorting(data);
 			}.bind(this));
 		},
