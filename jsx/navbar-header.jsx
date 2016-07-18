@@ -6,8 +6,7 @@ define(function () {
 			return <div className='navbar-header wrapper-navbar-header'>
       					<a className='navbar-brand title-navbar' href='#'>
       						<div className='container-logo'>
-        						<img className='logo' alt='OSI-7' src='../images/logo.png'/>
-        						<span className='logo-title'>OSI-7</span>
+        						<img className='logo' alt='Hermes' src='../images/logo.png'/>
         					</div>
       					</a>
     				</div>;
