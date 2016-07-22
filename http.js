@@ -1,6 +1,6 @@
 define(function (require) {
 	var config = require('js/config');
-
+	var baseUrl = config.url ? config.url : window.location.origin;
 	var verbs = ['get', 'post', 'put', 'delete'];
 	var map = {};
 
@@ -12,7 +12,7 @@ define(function (require) {
 		ajax: function (url, verb, data, dontLoad, deferred) {
 			data = data ? JSON.stringify(data) : null;
 			$.ajax({
-				url: window.location.origin + '/api/v1' + url,
+				url: baseUrl + '/api' + url,
 				type: verb.toUpperCase(),
 				data: data,
 				crossDomain: true,

@@ -16,8 +16,9 @@ define(function () {
 
 	// @if ENV == 'pi'
 	return {
-		withCredentials: true,
+		withCredentials: false,
 		mocks: false,
+		url: 'http://localhost:8080'
 	};
 	// @endif
 });

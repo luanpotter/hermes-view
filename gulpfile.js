@@ -107,6 +107,6 @@ gulp.task('clean', function () {
 	return del(['build']);
 });
 
-gulp.task('build', ['transform-js', 'transform-css', 'transform-index', 'deps']);
+gulp.task('build', ['transform-js', 'transform-css', 'transform-images', 'transform-index', 'deps']);
 
 gulp.task('default', ['pi']);
